@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Start</title>
+
+    <!-- collegamneto CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Collegamento CDN Vue-3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+
+
+
+
+<body>
+    
+    <div id="app">
+
+        <h1>Dai un nome a questa lucertola:</h1>
+
+        <h1> {{ message }} </h1>
+        <input type="text" v-model="message">
+        
+        <p>cambia animale:</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVesXUbHGxHDwJbmOkACzEsM3gFhcBxUn_IjNPK6nfg&s" alt="Piccola-Lucertola" v-model="photo">
+        <br> <!-- spaziatura -->
+        <input type="text" v-model="photo">
+
+    </div> <!-- div di VUE -->
+    
+
+
+    <!-- Collegamento JS -->
+    <script src="script.js"></script>
+</body>
+</html>
